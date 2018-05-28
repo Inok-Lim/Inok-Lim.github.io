@@ -1,0 +1,289 @@
+/*!
+ * Custom Styles - modified by Inok Lim
+ */
+
+ body {
+    font-size: 16px;
+    line-height: 22px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: #373648;
+    background-color: #e6ecf0;
+}
+
+header {
+    transition: top 0.2s ease-in-out;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    z-index: 99999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	letter-spacing: 3px;
+}
+
+section h2 {
+	font-size: 2.5em;
+}
+
+.navbar-toggle {
+	border: 0;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #4d616f;
+}
+
+.img-divider {
+    padding: 15px ;
+}
+.name {
+	color:#ff8e30;
+}
+
+.skills{
+	padding:5px;
+	background:#2489b3;
+}
+
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-brand {
+	margin: 0;
+    padding: 20px 15px;
+}
+
+.navbar-header,
+.nav>li>a {
+	letter-spacing: 3px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+
+.navbar-default {
+	background-color: #66757f;
+}
+
+.nav>li {
+	float: left;
+}
+
+.nav>li>a {
+	display: block;
+    margin: 10px 20px;
+    text-align: center;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 6px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.nav>li>a:after {
+    content: '';
+    display: block;
+    margin: 10px auto auto;
+    height: 3px;
+    width: 0;
+    background: 0 0;
+    -webkit-transition: width .5s ease,background-color .5s ease;
+    transition: width .5s ease,background-color .5s ease;
+}
+
+.nav>li>a:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #585352;
+    font-weight: 500;
+    background-color: #e6ecf0;
+    height: 20px;
+    border-radius: 5px;
+    -webkit-animation: grow .25s ease;
+    animation: grow .25s ease;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+}
+
+.social-networks {
+    padding-left: 0;
+}
+
+.social-networks li {
+    display: inline-block;
+}
+
+.social-networks a {
+    display: block;
+    position: relative;
+    margin: 0 7px;
+    width: 45px;
+    height: 45px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.social-networks a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin-top: -50%;
+    margin-left: -50%;
+    border-radius: 100px;
+    background-color: #0000;
+    border: 2px solid #fff;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.social-networks a:after {
+    position: relative;
+    display: block;
+    font-family: FontAwesome;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 47px;
+}
+
+.social-networks .icon-facebook:after {
+    content: "";
+}
+
+.social-networks .icon-linkedin:after {
+    content: "";
+}
+
+.social-networks .icon-facebook:focus:before, .social-networks .icon-facebook:hover:before {
+    background: #3b5998;
+    border: 2px solid #0000;
+}
+
+.social-networks .icon-linkedin:focus:before, .social-networks .icon-linkedin:hover:before {
+    background: #0077b5;
+    border: 2px solid #0000;
+}
+
+.social-networks.spin-icon a:focus:after, .social-networks.spin-icon a:hover:after {
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+    transition: transform .4s ease-out,-webkit-transform .4s ease-out;
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+hr.star-light, 
+hr.star-primary {
+	border-top: solid 3px;
+	margin: 15px auto 30px
+}
+
+@media (min-width: 768px) {
+	.navbar-fixed-top {
+		padding: 10px 0;
+	}
+
+	.navbar-right{
+		margin: 10px -15px -5px;
+	}
+
+	header .container {
+		padding-bottom: 45px;
+	}
+
+	header img {
+		margin: 0 0 40px 150px;
+	}
+
+	.navbar-fixed-top.navbar-shrink {
+    	padding: 0;
+	}
+
+	header hr.star-light {
+		margin-bottom: 20px;
+	}
+
+	.navbar-brand {
+		padding-top: 24px;
+	}
+}
+
+@media (min-width: 1360px) {
+	.container {
+    	width: calc(100% - 30px);
+	}
+
+	#portfolio .portfolio-item .portfolio-link {
+		max-width: initial;
+	}
+}
+
+.navbar-nav {
+    margin: 15px 0 0 -26px;
+}
+
+.floating-label-form-group input, 
+.floating-label-form-group textarea {
+	border: 2px solid #d5e0e6;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 6px;
+	transition: all .3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #66757f;
+}
+
+footer .footer-below {
+	background-color: #66757f;
+}
+
+footer .footer-above {
+    background-color: #4d616f;
+}
+
+.btn-primary {
+	background-color: #66757f;
+	color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	color: #fff;
+	background-color: #4d616f;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #e6ecf0;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+	background: #66757f;
+}
