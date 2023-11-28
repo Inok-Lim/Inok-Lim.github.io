@@ -236,6 +236,10 @@ hr.star-primary {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+        margin-bottom: -10vw;
+        padding-bottom: 50px;
     }
 
     h1.headline {
