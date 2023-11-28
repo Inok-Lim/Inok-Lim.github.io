@@ -36,4 +36,26 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+// Get Current Year
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// Header Typography Animation
+const swiftUpElements = document.querySelectorAll('.headline');
+
+swiftUpElements.forEach(elem => {
+
+	const words = elem.textContent.split(' ');
+	elem.innerHTML = '';
+
+	words.forEach((el, index) => {
+		words[index] = `<span><i>${words[index]}</i></span>`;
+	});
+
+	elem.innerHTML = words.join(' ');
+
+	const children = document.querySelectorAll('span > i');
+	children.forEach((node, index) => {
+		node.style.animationDelay = `${index * .2}s`;
+	});
+
+});

@@ -1,6 +1,13 @@
 /*!
  * Custom Styles - modified by Inok Lim
  */
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+	--headingSize: 55px;
+}
 
  body {
     font-size: 16px;
@@ -358,6 +365,19 @@ h1.headline {
     animation: gradient 15s ease infinite;
 }
 
+span {
+    display: inline-block;
+    overflow: hidden;
+    animation: .3s swift-up ease-in-out forwards;	
+}
+  
+i {
+    font-style: normal;
+    position: relative;
+    top: var(--headingSize);
+    animation: .5s swift-up ease-in-out forwards;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -367,5 +387,22 @@ h1.headline {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@keyframes swift-up {
+    to {
+      top: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: auto;
+        margin: 0 10%;
+    }
+    
+    :root{
+        --headingSize: 35px;
     }
 }
