@@ -10,6 +10,7 @@ body {
 
 p {
     font-size: 20px;
+    line-height: 30px;
 }
 
 p.small {
@@ -84,7 +85,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
-    background-position: center center;
+    background-position: bottom center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -191,7 +192,7 @@ section.success {
 	background-attachment: fixed;
     background-image: url(../img/success-bg.jpg);
     background-position: center center;
-    background-repeat: none;
+    background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -279,7 +280,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #2489b3;
+    color: #3498db;
     background: #fff;
 }
 
