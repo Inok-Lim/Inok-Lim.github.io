@@ -230,13 +230,13 @@ if (!matchMedia('(prefers-reduced-motion: reduce)').matches){
   setInterval(()=>{ rot.classList.add('out'); setTimeout(()=>{ wi=(wi+1)%words.length; rot.textContent=words[wi]; rot.classList.remove('out'); },350); },2400);
 }
 
-/* ---------- Reveal email ---------- */
-const rb = document.getElementById('reveal-btn'), out = document.getElementById('email-out');
-rb.addEventListener('click',()=>{ const o = out.hidden; out.hidden = !o; rb.setAttribute('aria-expanded', o); });
-document.getElementById('copy-btn').addEventListener('click', async e=>{
-  try{ await navigator.clipboard.writeText('inoklim@gmail.com'); e.target.textContent='Copied'; }
-  catch{ e.target.textContent='Select & copy'; }
-  setTimeout(()=>e.target.textContent='Copy',1800);
+/* ---------- Copy email ---------- */
+document.getElementById('copy-email').addEventListener('click', async e=>{
+  const st=document.getElementById('copy-status'), btn=e.currentTarget;
+  try{ await navigator.clipboard.writeText('inoklim@gmail.com'); st.textContent='Copied to clipboard'; }
+  catch{ st.textContent='Select the address to copy'; }
+  btn.setAttribute('aria-pressed','true');
+  setTimeout(()=>{ st.textContent='Click to copy email'; btn.setAttribute('aria-pressed','false'); },2000);
 });
 
 /* ---------- Top bar: hide on scroll down, show on scroll up ---------- */

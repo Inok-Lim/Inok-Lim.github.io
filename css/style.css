@@ -163,6 +163,12 @@ h1,h2,h3{font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
 .kt b{font-weight:500;font-size:15px}
 .kt span{color:var(--muted);font-size:13px;margin-top:3px}
 
+.contact-knobs{grid-template-columns:repeat(3,minmax(0,1fr));margin:36px 0 0}
+a.knob-btn{color:inherit}
+.contact-knobs .kc b{font-size:15px}
+.contact-knobs .kt b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.contact-knobs .knob-btn[aria-pressed="true"] .kc i{transform:none}
+
 /* Skill x sector matrix */
 .matrix{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .mx-head,.mx-row{display:grid;grid-template-columns:minmax(220px,1.6fr) repeat(5,minmax(0,1fr));align-items:center}
@@ -267,13 +273,13 @@ h1,h2,h3{font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
 .status{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13.5px;margin:22px 4px 0}
 
 /* Footer */
-.foot{display:flex;flex-direction:column;align-items:center;gap:10px;padding:clamp(90px,12vw,150px) 16px 40px;position:relative}
+.foot{max-width:1200px;margin:clamp(80px,10vw,120px) auto 0;padding:22px clamp(16px,3vw,28px) 34px;border-top:1px solid var(--line);display:flex;justify-content:center}
 .seal{width:170px;height:170px;animation:spin 28s linear infinite}
 .seal text{font-family:var(--mono);font-size:12.5px;letter-spacing:.18em;fill:var(--muted)}
 .seal-links{position:absolute;top:calc(clamp(90px,12vw,150px) + 85px);transform:translateY(-50%);display:flex;align-items:center;gap:12px;font-weight:600;font-size:20px}
 .seal-links span{width:22px;height:1px;background:var(--ink);display:block}
 .seal-links a:hover{color:var(--c-a)}
-.copy-line{font-size:12px;color:var(--muted);margin:16px 0 0}
+.copy-line{font-size:12px;color:var(--muted);margin:0}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* Case view */
@@ -311,6 +317,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-.025em;text-wrap:balance;margin:0}
   .chrome{grid-template-columns:1fr auto}
   .chrome .file{display:none}
   .knobs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-knobs{grid-template-columns:minmax(0,1fr)}
   .mx-head,.mx-row{grid-template-columns:minmax(150px,1.4fr) repeat(5,minmax(0,1fr))}
   .mx-skill em{display:none}
   .mx-head{font-size:10px}

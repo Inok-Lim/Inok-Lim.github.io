@@ -21,7 +21,7 @@
   <nav aria-label="Primary">
     <a href="#about">About</a>
     <a href="#work">Work</a>
-    <a href="https://www.linkedin.com/in/inoklim/">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/inoklim/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="avail" href="#contact"><i aria-hidden="true"></i>Available for projects</a>
   </nav>
 </header>
@@ -149,16 +149,20 @@
   <!-- CONTACT -->
   <section class="block" id="contact" aria-labelledby="contact-title">
     <p class="slash">/new project</p>
-    <h2 id="contact-title" class="big">Let's <span class="rot" id="rot">design</span><br>something people learn from.</h2>
-    <div class="reveal">
-      <button type="button" class="reveal-btn" id="reveal-btn" aria-expanded="false" aria-controls="email-out">
-        <span class="arrow" aria-hidden="true">→</span>
-        <span class="rtext"><b>Reveal</b><span>email address</span></span>
+     <h2 id="contact-title">Let's <span class="rot" id="rot">design</span><br>something people learn from.</h2>
+    <div class="knobs contact-knobs">
+      <button type="button" class="knob-btn" id="copy-email" style="--k:var(--c-a)">
+        <span class="kc" aria-hidden="true"><b>@</b><i>⧉</i></span>
+        <span class="kt"><b>inoklim@gmail.com</b><span id="copy-status">Click to copy email</span></span>
       </button>
-      <div class="email-out" id="email-out" hidden>
-        <span class="email">inoklim@gmail.com</span>
-        <button type="button" class="copy" id="copy-btn">Copy</button>
-      </div>
+      <a class="knob-btn" href="https://www.linkedin.com/in/inoklim/" style="--k:var(--c-c)" target="_blank" rel="noopener">
+        <span class="kc" aria-hidden="true"><b>in</b><i>↗</i></span>
+        <span class="kt"><b>LinkedIn</b><span>linkedin.com/in/inoklim</span></span>
+      </a>
+      <a class="knob-btn" href="Resume_Inok_Lim_Instructional_Designer.pdf" style="--k:var(--c-b)" target="_blank" rel="noopener">
+        <span class="kc" aria-hidden="true"><b>CV</b><i>↓</i></span>
+        <span class="kt"><b>Résumé</b><span>PDF · 2 pages</span></span>
+      </a>
     </div>
     <p class="status"><i aria-hidden="true"></i>Based in Vancouver, BC · open to eLearning and UI/UX projects</p>
   </section>
@@ -167,17 +171,6 @@
 <main id="case-view" class="case" hidden></main>
 
 <footer class="foot">
-  <div class="seal" aria-hidden="true">
-    <svg viewBox="0 0 200 200">
-      <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
-      <text><textPath href="#circ">LEARN • DESIGN • TEST • IMPROVE • LEARN • DESIGN • TEST • IMPROVE •</textPath></text>
-    </svg>
-  </div>
-  <div class="seal-links">
-    <a href="https://www.linkedin.com/in/inoklim/" aria-label="LinkedIn">in</a>
-    <span aria-hidden="true"></span>
-    <a href="Resume_Inok_Lim_Instructional_Designer.pdf" aria-label="Résumé PDF">CV</a>
-  </div>
   <p class="copy-line">© 2026 Inok Lim · Vancouver</p>
 </footer>
 
