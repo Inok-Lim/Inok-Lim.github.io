@@ -1,1632 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-    <meta name="description" content="The web and the multimedia design portfolio of Inok Lim">
-    <meta name="keywords" content="inok lim, inok, web, website, websites, web design, design, graphic design, logo design, multimedia, multimedia design, multimedia development, responsive, mobile, mobile design, e-learning, instructional design, development, responsive development, web development, unique, fun, developer, illustration, personal, portfolio, store, prints, icons">
-    <meta name="author" content="Inok Lim">
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <title>Inok Lim | UI/UX Design and Front End Development</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-	<link href="css/stylesheet.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911%7CRaleway:400,300,500,700%7COpen+Sans:400italic,400&amp;subset=latin,latin,latin" media="all" rel="stylesheet" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKZKBFYGY8"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XKZKBFYGY8');
-    </script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inok Lim · Instructional &amp; UI/UX Designer</title>
+<meta name="description" content="Inok Lim designs eLearning and digital products that are clear, accessible and human.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 </head>
+<body>
 
-<body id="page-top" class="index">
+<header class="top" id="top-bar">
+  <a class="who" href="#home">
+    <b>Inok Lim</b>
+    <span>Learning × Interface × People</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="https://www.linkedin.com/in/inoklim/">LinkedIn</a>
+    <a class="avail" href="#contact"><i aria-hidden="true"></i>Available for projects</a>
+  </nav>
+</header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Inok Lim</a>
-            </div>
+<main id="home-view">
+  <!-- HERO: the portfolio opens like a short course -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="player" id="player">
+      <div class="chrome">
+        <span class="file">inok-lim<span>.course</span></span>
+        <span class="mod" id="mod-title">Module 1 · Meet Inok</span>
+        <span class="count" aria-hidden="true"><b id="slide-n">1</b> / 4</span>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+      <div class="slides" aria-live="polite">
+        <!-- 1 -->
+        <article class="slide on" data-title="Module 1 · Meet Inok" aria-label="Slide 1 of 4">
+          <div class="s-text">
+            <p class="eyebrow">Learning objective</p>
+            <h1 id="hero-title">By the end of this page, you'll know why my courses get <em>finished</em> and my interfaces get <em>used</em>.</h1>
+            <p class="s-sub">I'm Inok Lim, an instructional &amp; UI/UX designer in Vancouver with 15+ years across healthcare, government, higher-ed and software.</p>
+          </div>
+          <figure class="presenter" aria-label="Animated presenter: Inok Lim in a black blazer, smiling and gesturing">
+            <p class="bubble"><span id="bubble-text">Hi, I'm Inok! Welcome to the course.</span><span class="caret" aria-hidden="true"></span></p>
+            <img class="person-anim" id="presenter-anim" src="images/inok-presenter-anim.webp" data-still="images/inok-presenter-still.webp" alt="" width="600" height="720">
+            <figcaption><i aria-hidden="true"></i>Your instructor · Inok Lim</figcaption>
+          </figure>
+        </article>
 
-    <!-- Header -->
-    <header>
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 650" width="1500" height="650" preserveAspectRatio="xMidYMid meet" style="width: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_3"><rect width="1500" height="650" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_3)"><g transform="matrix(1,0,0,1,750,325)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 8" stroke-dashoffset="0" stroke="rgb(216,216,216)" stroke-opacity="1" stroke-width="2" d=" M-764.9669799804688,15.680000305175781 C-764.9669799804688,15.680000305175781 -654.301025390625,-64.83599853515625 -593.2020263671875,80.53700256347656 C-572.5330200195312,129.71499633789062 -592.489013671875,139.6929931640625 -606.031005859375,136.8419952392578 C-619.572998046875,133.99099731445312 -645.2310180664062,72.6969985961914 -522.6430053710938,45.61399841308594 C-400.05499267578125,18.5310001373291 -374.3970031738281,122.58799743652344 -320.9429931640625,40.625 C-267.489013671875,-41.3380012512207 -196.2169952392578,-194.572998046875 14.03499984741211,-193.86000061035156 C224.28700256347656,-193.14700317382812 263.48699951171875,-47.75199890136719 324.781005859375,28.509000778198242 C386.07501220703125,104.7699966430664 525.7680053710938,64.1449966430664 525.7680053710938,64.1449966430664"></path></g></g><g class="ai" transform="matrix(0.7968910336494446,-0.07046107202768326,0.07046107202768326,0.7968910336494446,1201.1727294921875,124.84229278564453)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,45.49100112915039,333.37701416015625)"><path fill="rgb(216,216,216)" fill-opacity="1" d=" M-35.374000549316406,-0.6269999742507935 C-35.374000549316406,-0.6269999742507935 -34.5620002746582,20.625999450683594 -34.5620002746582,20.625999450683594 C-34.5620002746582,20.625999450683594 -19.31999969482422,15.36400032043457 -19.31999969482422,15.36400032043457 C-19.31999969482422,15.36400032043457 35.37300109863281,-20.625999450683594 35.37300109863281,-20.625999450683594 C35.37300109863281,-20.625999450683594 -35.374000549316406,-0.6269999742507935 -35.374000549316406,-0.6269999742507935z"></path></g><g opacity="1" transform="matrix(1,0,0,1,51.49100112915039,339.7879943847656)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-29.37299919128418,0.4830000102519989 C-29.37299919128418,0.4830000102519989 -16.66900062561035,27.038000106811523 -16.66900062561035,27.038000106811523 C-16.66900062561035,27.038000106811523 29.37299919128418,-27.038000106811523 29.37299919128418,-27.038000106811523 C29.37299919128418,-27.038000106811523 -29.37299919128418,0.4830000102519989 -29.37299919128418,0.4830000102519989z"></path></g><g opacity="1" transform="matrix(1,0,0,1,41.189998626708984,322.75)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-39.67399978637695,-9.397000312805176 C-39.67399978637695,-9.397000312805176 -31.07200050354004,10 -31.07200050354004,10 C-31.07200050354004,10 39.67399978637695,-9.99899959564209 39.67399978637695,-9.99899959564209 C39.67399978637695,-9.99899959564209 -39.67399978637695,-9.397000312805176 -39.67399978637695,-9.397000312805176z"></path></g><g opacity="1" transform="matrix(1,0,0,1,18.548999786376953,347.1369934082031)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M3.569000005722046,-6.866000175476074 C3.569000005722046,-6.866000175476074 7.620999813079834,1.6039999723434448 7.620999813079834,1.6039999723434448 C7.620999813079834,1.6039999723434448 -7.620999813079834,6.866000175476074 -7.620999813079834,6.866000175476074 C-7.620999813079834,6.866000175476074 3.569000005722046,-6.866000175476074 3.569000005722046,-6.866000175476074z"></path></g></g><g transform="matrix(1,0,0,1,750,325)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 8" stroke-dashoffset="0" stroke="rgb(216,216,216)" stroke-opacity="1" stroke-width="2" d=" M-764.9669799804688,15.680000305175781 C-764.9669799804688,15.680000305175781 -654.301025390625,-64.83599853515625 -593.2020263671875,80.53700256347656 C-572.5330200195312,129.71499633789062 -592.489013671875,139.6929931640625 -606.031005859375,136.8419952392578 C-619.572998046875,133.99099731445312 -645.2310180664062,72.6969985961914 -522.6430053710938,45.61399841308594 C-400.05499267578125,18.5310001373291 -374.3970031738281,122.58799743652344 -320.9429931640625,40.625 C-267.489013671875,-41.3380012512207 -196.20700073242188,-195.99400329589844 14.03499984741211,-193.86000061035156 C154.4409942626953,-192.43499755859375 214.99000549316406,-174.83599853515625 274.1780090332031,-96.93000030517578 C357.5660095214844,12.829000473022461 450.9320068359375,-34.92300033569336 450.9320068359375,-34.92300033569336"></path></g></g><g class="ai" transform="matrix(0.7968044877052307,-0.07143278419971466,0.07143278419971466,0.7968044877052307,1126.014404296875,25.86546516418457)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,45.49100112915039,333.37701416015625)"><path fill="rgb(216,216,216)" fill-opacity="1" d=" M-35.374000549316406,-0.6269999742507935 C-35.374000549316406,-0.6269999742507935 -34.5620002746582,20.625999450683594 -34.5620002746582,20.625999450683594 C-34.5620002746582,20.625999450683594 -19.31999969482422,15.36400032043457 -19.31999969482422,15.36400032043457 C-19.31999969482422,15.36400032043457 35.37300109863281,-20.625999450683594 35.37300109863281,-20.625999450683594 C35.37300109863281,-20.625999450683594 -35.374000549316406,-0.6269999742507935 -35.374000549316406,-0.6269999742507935z"></path></g><g opacity="1" transform="matrix(1,0,0,1,51.49100112915039,339.7879943847656)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-29.37299919128418,0.4830000102519989 C-29.37299919128418,0.4830000102519989 -16.66900062561035,27.038000106811523 -16.66900062561035,27.038000106811523 C-16.66900062561035,27.038000106811523 29.37299919128418,-27.038000106811523 29.37299919128418,-27.038000106811523 C29.37299919128418,-27.038000106811523 -29.37299919128418,0.4830000102519989 -29.37299919128418,0.4830000102519989z"></path></g><g opacity="1" transform="matrix(1,0,0,1,41.189998626708984,322.75)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-39.67399978637695,-9.397000312805176 C-39.67399978637695,-9.397000312805176 -31.07200050354004,10 -31.07200050354004,10 C-31.07200050354004,10 39.67399978637695,-9.99899959564209 39.67399978637695,-9.99899959564209 C39.67399978637695,-9.99899959564209 -39.67399978637695,-9.397000312805176 -39.67399978637695,-9.397000312805176z"></path></g><g opacity="1" transform="matrix(1,0,0,1,18.548999786376953,347.1369934082031)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M3.569000005722046,-6.866000175476074 C3.569000005722046,-6.866000175476074 7.620999813079834,1.6039999723434448 7.620999813079834,1.6039999723434448 C7.620999813079834,1.6039999723434448 -7.620999813079834,6.866000175476074 -7.620999813079834,6.866000175476074 C-7.620999813079834,6.866000175476074 3.569000005722046,-6.866000175476074 3.569000005722046,-6.866000175476074z"></path></g></g><g transform="matrix(1,0,0,1,750,325)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 8" stroke-dashoffset="0" stroke="rgb(216,216,216)" stroke-opacity="1" stroke-width="2" d=" M-764.9669799804688,15.680000305175781 C-764.9669799804688,15.680000305175781 -654.301025390625,-64.83599853515625 -593.2020263671875,80.53700256347656 C-572.5330200195312,129.71499633789062 -592.489013671875,139.6929931640625 -606.031005859375,136.8419952392578 C-619.572998046875,133.99099731445312 -645.2310180664062,72.6969985961914 -522.6430053710938,45.61399841308594 C-400.05499267578125,18.5310001373291 -374.3970031738281,122.58799743652344 -320.9429931640625,40.625 C-267.489013671875,-41.3380012512207 -196.20700073242188,-195.99400329589844 14.03499984741211,-193.86000061035156 C154.4409942626953,-192.43499755859375 259.3330078125,-79.80999755859375 272.75201416015625,17.104999542236328 C298.4100036621094,202.41200256347656 401.7539978027344,164.63800048828125 401.7539978027344,164.63800048828125"></path></g></g><g class="ai" transform="matrix(0.7968506217002869,-0.07091586291790009,0.07091586291790009,0.7968506217002869,1076.978271484375,225.3697052001953)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,45.49100112915039,333.37701416015625)"><path fill="rgb(216,216,216)" fill-opacity="1" d=" M-35.374000549316406,-0.6269999742507935 C-35.374000549316406,-0.6269999742507935 -34.5620002746582,20.625999450683594 -34.5620002746582,20.625999450683594 C-34.5620002746582,20.625999450683594 -19.31999969482422,15.36400032043457 -19.31999969482422,15.36400032043457 C-19.31999969482422,15.36400032043457 35.37300109863281,-20.625999450683594 35.37300109863281,-20.625999450683594 C35.37300109863281,-20.625999450683594 -35.374000549316406,-0.6269999742507935 -35.374000549316406,-0.6269999742507935z"></path></g><g opacity="1" transform="matrix(1,0,0,1,51.49100112915039,339.7879943847656)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-29.37299919128418,0.4830000102519989 C-29.37299919128418,0.4830000102519989 -16.66900062561035,27.038000106811523 -16.66900062561035,27.038000106811523 C-16.66900062561035,27.038000106811523 29.37299919128418,-27.038000106811523 29.37299919128418,-27.038000106811523 C29.37299919128418,-27.038000106811523 -29.37299919128418,0.4830000102519989 -29.37299919128418,0.4830000102519989z"></path></g><g opacity="1" transform="matrix(1,0,0,1,41.189998626708984,322.75)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M-39.67399978637695,-9.397000312805176 C-39.67399978637695,-9.397000312805176 -31.07200050354004,10 -31.07200050354004,10 C-31.07200050354004,10 39.67399978637695,-9.99899959564209 39.67399978637695,-9.99899959564209 C39.67399978637695,-9.99899959564209 -39.67399978637695,-9.397000312805176 -39.67399978637695,-9.397000312805176z"></path></g><g opacity="1" transform="matrix(1,0,0,1,18.548999786376953,347.1369934082031)"><path fill="rgb(52,10,97)" fill-opacity="1" d=" M3.569000005722046,-6.866000175476074 C3.569000005722046,-6.866000175476074 7.620999813079834,1.6039999723434448 7.620999813079834,1.6039999723434448 C7.620999813079834,1.6039999723434448 -7.620999813079834,6.866000175476074 -7.620999813079834,6.866000175476074 C-7.620999813079834,6.866000175476074 3.569000005722046,-6.866000175476074 3.569000005722046,-6.866000175476074z"></path></g></g></g></svg>   
-        <div class="container">
-          <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="headline">Hey there! 👋 I’m a UX/UI Designer & Instructional Developer that uses my background in business to create meaningful digital experiences.</h1>
-                </div>
-            </div>
-        </div>
-    </header>
+        <!-- 2 -->
+        <article class="slide" data-title="Module 2 · Knowledge check" aria-label="Slide 2 of 4" hidden>
+          <div class="s-text">
+            <p class="eyebrow">Knowledge check</p>
+            <h2>What does Inok design?</h2>
+            <p class="s-sub">Pick one. There's feedback, just like in a real module.</p>
+          </div>
+          <div class="quiz" role="radiogroup" aria-label="What does Inok design?">
+            <button type="button" class="q" role="radio" aria-checked="false" id="q-a" data-ok="0"><i></i>eLearning courses</button>
+            <button type="button" class="q" role="radio" aria-checked="false" id="q-b" data-ok="0"><i></i>Product interfaces</button>
+            <button type="button" class="q" role="radio" aria-checked="false" id="q-c" data-ok="1"><i></i>Both, and they make each other better</button>
+            <p class="fb" id="fb" hidden></p>
+          </div>
+        </article>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalmo01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/mo01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalpo01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/po01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalwf02" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/wf02.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalil01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/il01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalwf01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/wf01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalds01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ds01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalpd01" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/pd01.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModalpd02" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/pd02.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web1.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web2.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web3.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web4.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web5.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-                <div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web6.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web7.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web8.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web9.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web10.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web11.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/web12.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m1-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m2-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m3-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m4-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal17" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m5-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal18" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m6-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal19" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m7-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m8-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal21" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m9-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal22" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m10-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal23" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m11-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-				<div class="col-sm-3 portfolio-item">
-                    <a href="#portfolioModal24" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/m12-thumb.jpg" class="img-responsive" alt="Portfolio">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- 3 -->
+        <article class="slide" data-title="Module 3 · Key facts" aria-label="Slide 3 of 4" hidden>
+          <div class="s-text">
+            <p class="eyebrow">Key facts</p>
+            <h2>Fifteen years of making complex things clear.</h2>
+            <p class="s-sub">From bilingual government eLearning to enterprise design systems.</p>
+          </div>
+          <dl class="facts">
+            <div><dt>Years in learning &amp; digital design</dt><dd>15+</dd></div>
+            <div><dt>Government &amp; enterprise eLearning clients</dt><dd>20+</dd></div>
+            <div><dt>Wireframes &amp; prototypes at Sage</dt><dd>100+</dd></div>
+            <div><dt>WCAG / WAI-ARIA compliance, 300+ pages</dt><dd>93%</dd></div>
+          </dl>
+        </article>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>With my extensive experience in UI/UX Design, e-Learning and Multimedia Design, I maintain a good balance between functionality and visual impact in all my work. </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I love my work and enjoy each new project as I get it. Feel free to have a look at my portfolio and contact me if you think I can be of service to you. Thanks for stopping by!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="img/InokLim_resume.pdf" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Here's my CV!
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- 4 -->
+        <article class="slide" data-title="Module 4 · Next steps" aria-label="Slide 4 of 4" hidden>
+          <div class="s-text">
+            <p class="eyebrow">Next steps</p>
+            <h2>Module complete. Choose your path.</h2>
+            <p class="s-sub">See the work in detail, or start a conversation about your project.</p>
+          </div>
+          <div class="paths">
+            <a href="#work" class="path"><span class="pk" style="background:var(--c-a)"></span><b>View case studies</b><span>8 projects · eLearning &amp; UI/UX</span><em aria-hidden="true">→</em></a>
+            <a href="#about" class="path"><span class="pk" style="background:var(--c-b)"></span><b>Skills &amp; experience</b><span>12 organizations</span><em aria-hidden="true">→</em></a>
+            <a href="#contact" class="path"><span class="pk" style="background:var(--green)"></span><b>Start a project</b><span>Available now</span><em aria-hidden="true">→</em></a>
+          </div>
+        </article>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-primary btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div class="controls">
+        <button type="button" class="ctl" id="prev" aria-label="Previous slide" disabled>← Back</button>
+        <div class="segs" role="group" aria-label="Go to slide">
+          <button type="button" class="seg on" id="seg-1" data-i="0" aria-label="Slide 1, Meet Inok" aria-current="step"><b></b></button>
+          <button type="button" class="seg" id="seg-2" data-i="1" aria-label="Slide 2, Knowledge check"><b></b></button>
+          <button type="button" class="seg" id="seg-3" data-i="2" aria-label="Slide 3, Key facts"><b></b></button>
+          <button type="button" class="seg" id="seg-4" data-i="3" aria-label="Slide 4, Next steps"><b></b></button>
         </div>
-    </section>
+        <button type="button" class="ctl ctl-next" id="next">Next →</button>
+      </div>
+    </div>
+    <a class="skip" href="#work">Skip the intro, show me the work ↓</a>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Vancouver<br>Canada</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="social-networks spin-icon">
-                            <li><a href="https://www.facebook.com/inok.lim" class="icon-facebook" target="_blank">Facebook</a></li>
-                            <li><a href="https://www.linkedin.com/in/inoklim" class="icon-linkedin" target="_blank">LinkedIn</a></li>
-                          </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Services</h3>
-                        <p>UI/UX Design | Web Development<br>
-						Graphic Design | Print | e-Learning</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Inok Lim <span id="year"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div class="ticker" aria-label="Organizations I've designed for">
+    <span class="ticker-label"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v14M1 8h14M3 3l10 10M13 3L3 13"/></svg>Organizations I've designed for</span>
+    <div class="ticker-mask"><div class="ticker-track" id="ticker"></div></div>
+  </div>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+  <!-- ABOUT -->
+  <section class="block" id="about" aria-labelledby="about-title">
+    <p class="slash">/about</p>
+    <h2 id="about-title">I design learning that works like a good product, and products that quietly teach.</h2>
+    <p class="sub">For more than fifteen years I've worked with government, healthcare, higher education and software teams. I run discovery with subject matter experts, map what people need to do, then build the course, the prototype or the system that gets them there.</p>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModalmo01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Mobile App Design</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/mo01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>The Electric Unicorn
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UX/UI Design - Figma
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="knobs" id="knobs" role="group" aria-label="Choose a skill to highlight where I've used it"></div>
+    <div class="matrix" id="skills">
+      <div class="mx-head" aria-hidden="true">
+        <span class="mx-title">Skill × sector</span>
+        <span>Healthcare</span><span>Government</span><span>Higher-ed</span><span>Workforce</span><span>Software</span>
+      </div>
+      <div class="mx-rows" id="mx-rows"></div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalpo01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Poster Design</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/po01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Cravings Brookswood Cafe
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>Graphic Design - Photoshop & InDesign
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalwf02" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Design</h2>
-                            <hr class="star-primary">
-                            <h4><a href="https://wordpress-970007-3893654.cloudwaysapps.com/home/" target="_blank">Visit Website</a></h4>
-                            <img src="img/portfolio/wf02-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Budget Advisor
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Development - Figma & WordPress
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalil01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Illustration</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/il01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Canadian War Museum
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>Kiosk Interface - Adobe Illustrator
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalwf01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Design</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/wf01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>MWCoach
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>Low Fidelity Wireframe - Figma (<a href="https://wordpress-124082-4069720.cloudwaysapps.com/" target="_blank">Visit Website</a> )
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalds01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Design System</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ds01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Sage 300
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>Design System Development - Figma
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalpd01" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Product Design</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/pd01-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Sage 300 Intelligence Reports
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Modernization - Axure RP
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalpd02" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Product Design</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/pd02-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Sage 300 Cloud
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Redesign to relfect Design System 2024 - Figma
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web1-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-							
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Direct Focus International
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design - Figma
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web2-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Conroy Dental Centre
-                                    </strong>
-                                </li>
-                                <li>Year:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web3-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Freight Management Association of Canada
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-								<li>Website:
-                                    <strong><a href="http://www.cita-acti.ca" target="_blank">Click here.</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web4-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Pixelera Inc.
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web5-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Real Estate</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web6-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Dylan Albon</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	 <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web7-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Laura Kelly Photography</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	 <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web8-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Markham Place A</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web9-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>NOMT
-                                    </strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	 <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web10-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Dr. Howell Electric Inc.</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS, WordPress
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	 <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web11-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Health Canada - Youth Zone</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Development</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/web12-big.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Health Canada - Youth Zone</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Web Development - Photoshop, Figma, HTML/CSS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>E-Learning</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/m1.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Starbucks</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Flash Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Banner</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/fs_1212_1_300x250_en.swf" width="300" height="250"><br>
-                            <embed src="img/portfolio/fs_1212_1_728x90_en.swf" width="728" height="90">
-                            <!-- <img src="img/portfolio/m16.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Future Shop - Best Buy Canada</strong>
-                                </li>
-                                <li>Work:
-                                    <strong>UI Design & Flash Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>E-Learning</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/prenatal.swf" width="605" height="400">
-                            <!-- <img src="img/portfolio/m3-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                                <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Health Canada</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI Design & Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Interactive Tutorial</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/food_safety_en.swf" width="757" height="434">
-                            <!-- <img src="img/portfolio/m4-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Health Canada</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Interactive Timeline</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/NRC90_e.swf" width="800" height="600">
-                            <!-- <img src="img/portfolio/m5-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                                <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>NRC</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Multimedia</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/m6.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Health Canada</strong>
-                                </li>
-								<li>Service:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Interactive Toturial</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/microscope.swf" width="565" height="400">
-                            <!-- <img src="img/portfolio/m7-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                                <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>NRC</strong>
-                                </li>
-								<li>Service:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Interactive Toturial</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/mona-lisa.swf" width="720" height="540">
-                            <!-- <img src="img/portfolio/m8-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                                <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>NRC</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>KIOSK Touch Screen</h2>
-                            <hr class="star-primary">
-                            <a href="http://www.pixelera.com/CMFiles/portfolio/touchScreen/iframeMontefiore.html" target="_blank"><img src="img/portfolio/m9.jpg" class="img-responsive img-centered" alt="Portfolio"></a>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Montefiore Club</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>KIOSK Touch Screen</h2>
-                            <hr class="star-primary">
-                            <a href="http://www.pixelera.com/CMFiles/portfolio/touchScreen/iframeShip.html" target="_blank"><img src="img/portfolio/m13.jpg" class="img-responsive img-centered" alt="Portfolio"></a>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Beaubears Island</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>KIOSK Touch Screen</h2>
-                            <hr class="star-primary">
-                            <embed src="img/portfolio/camp-desperance.swf" width="624" height="500">
-                            <!-- <img src="img/portfolio/m11-thumb.jpg" class="img-responsive img-centered" alt="Portfolio"> -->
-                                <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Beaubears Island</strong>
-                                </li>
-								<li>Work:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<div class="portfolio-modal modal fade" id="portfolioModal24" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-			<div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>KIOSK Touch Screen</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/m15.jpg" class="img-responsive img-centered" alt="Portfolio">
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Beaubears Island</strong>
-                                </li>
-								<li>Service:
-                                    <strong>UI/UX Design & Flash, Articulate Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <p class="hint">Choose a skill to highlight the organizations below.</p>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <ol class="clients" id="clients"></ol>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <div class="tools">
+      <span class="slash">Tools</span>
+      <div class="chips"><span>Articulate Storyline</span><span>Rise</span><span>Adobe Captivate</span><span>Moodle</span><span>Figma</span><span>Axure RP</span><span>Adobe CC</span><span>WordPress</span><span>HTML / CSS</span><span>Video production</span></div>
+    </div>
+  </section>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+  <!-- WORK -->
+  <section class="block" id="work" aria-labelledby="work-title">
+    <p class="slash">/work</p>
+    <h2 id="work-title">Selected case studies</h2>
+    <div class="projects" id="projects"></div>
+  </section>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+  <!-- CONTACT -->
+  <section class="block" id="contact" aria-labelledby="contact-title">
+    <p class="slash">/new project</p>
+    <h2 id="contact-title" class="big">Let's <span class="rot" id="rot">design</span><br>something people learn from.</h2>
+    <div class="reveal">
+      <button type="button" class="reveal-btn" id="reveal-btn" aria-expanded="false" aria-controls="email-out">
+        <span class="arrow" aria-hidden="true">→</span>
+        <span class="rtext"><b>Reveal</b><span>email address</span></span>
+      </button>
+      <div class="email-out" id="email-out" hidden>
+        <span class="email">inoklim@gmail.com</span>
+        <button type="button" class="copy" id="copy-btn">Copy</button>
+      </div>
+    </div>
+    <p class="status"><i aria-hidden="true"></i>Based in Vancouver, BC · open to eLearning and UI/UX projects</p>
+  </section>
+</main>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-	   <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = {
-            "warnOnUnsupportedContent": false,
-            "autoplay": "on",
-            "unmuteOverlay": "hidden"
-        };
-    </script>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<main id="case-view" class="case" hidden></main>
+
+<footer class="foot">
+  <div class="seal" aria-hidden="true">
+    <svg viewBox="0 0 200 200">
+      <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+      <text><textPath href="#circ">LEARN • DESIGN • TEST • IMPROVE • LEARN • DESIGN • TEST • IMPROVE •</textPath></text>
+    </svg>
+  </div>
+  <div class="seal-links">
+    <a href="https://www.linkedin.com/in/inoklim/" aria-label="LinkedIn">in</a>
+    <span aria-hidden="true"></span>
+    <a href="Resume_Inok_Lim_Instructional_Designer.pdf" aria-label="Résumé PDF">CV</a>
+  </div>
+  <p class="copy-line">© 2026 Inok Lim · Vancouver</p>
+</footer>
+
+<script src="script/main.js"></script>
 </body>
-
 </html>
